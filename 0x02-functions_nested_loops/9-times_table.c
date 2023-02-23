@@ -28,10 +28,10 @@ void times_table(void)
 			digit2 = (x * y) % 10;
 			digit1 = (x * y) / 10;
 
-			_putchar(digit2 + '0');
-
 			if ((x * y) > 9)
 				_putchar(digit1 + '0');
+
+			_putchar(digit2 + '0');
 		}
 
 		_putchar('\n');
