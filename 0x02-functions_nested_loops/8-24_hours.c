@@ -6,7 +6,7 @@
  */
 void jack_bauer(void)
 {
-	int i,j,z,k;
+	int i, j, z, k;
 
 	for (i = 0; i <= 2; i++)
 	{
@@ -24,7 +24,7 @@ void jack_bauer(void)
 					_putchar(':');
 					_putchar(z + '0');
 					_putchar(k + '0');
-					_putchar('\n');	
+					_putchar('\n');
 				}
 			}
 		}
