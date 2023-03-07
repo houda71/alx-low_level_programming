@@ -3,7 +3,7 @@
 
 /**
  * _strstr - locates a substring.
- * @needle: pointer to substring to found.
+ * @needl: pointer to substring to found.
  * @haystack: pointer to a string to search in.
  *
  * Discryption: finds the first occurrence of the substring needle
