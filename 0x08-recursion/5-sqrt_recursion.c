@@ -15,7 +15,7 @@ int _sqrt(int num, int root)
 {
 	if (num < 0 || root > num)
 		return (-1);
-	
+
 	if (root * root == num)
 		return (root);
 
