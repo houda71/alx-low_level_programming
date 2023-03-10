@@ -13,13 +13,13 @@ int _sqrt_recursion(int n);
 
 int _sqrt(int num, int root)
 {
+	if (num < 0 || root > num)
+		return (-1);
+	
 	if (root * root == num)
 		return (root);
 
-	if (root < 0)
-		return (-1);
-
-	return (_sqrt(num, root - 1));
+	return (_sqrt(num, root + 1));
 }
 
 /**
@@ -31,7 +31,7 @@ int _sqrt(int num, int root)
  */
 int _sqrt_recursion(int n)
 {
-	int root = n;
+	int root = 0;
 
 	return (_sqrt(n, root));
 }
