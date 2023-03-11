@@ -5,7 +5,7 @@
 
 ## Tasks
 * 0. A library is not a luxury but one of the necessities of life
-    - libmy.a: Static library containing all the following functions:
+    * libmy.a: Static library containing all the following functions:
 	* `int _putchar(char c)`;
 		- `int _islower(int c)`;
 	* `int _isalpha(int c)`;
