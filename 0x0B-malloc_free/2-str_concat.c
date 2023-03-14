@@ -30,21 +30,23 @@ char *str_concat(char *s1, char *s2)
 	for (i = 0; s2[i]; i++)
 		len_s2++;
 
-	str = malloc(len_s1 + len_s2);
-
+	/* Allocate memory for the concatenated string */
+	str = malloc(len_s1 + len_s2 + 1);
 	if (str == NULL)
 		return (NULL);
 
-	/* Add the content os s1 to str*/
+	/* Copy the content os s1 to str*/
 	for (i = 0; s1[i]; i++)
 		str[i] = s1[i];
 
-	/* Add the content os s2 to str*/
+	/* Copy the content os s2 to str*/
 	for (j = 0; s2[j]; j++)
 	{
 		str[i] = s2[j];
 		i++;
 	}
+	/* Add null terminator to the end of the string */
+	str[i] = '\0';
 
 	return (str);
 }
